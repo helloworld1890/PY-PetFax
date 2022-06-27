@@ -7,11 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Welcome to PetFax</h1>
-    {% for pet in pets %}
-        <h2>{{ pet.pet_name }}</h2>
-        <a href="/pets/{{pet.pet_id}}">{{pet.pet_name}}</a>
-        <img src="{{ pet.pet_photo }}" alt="Photo of pet"/>
-    {% endfor %}
+    {% if pet %}
+    <h2>{{pet.pet_name}}</h2>
+    <img src="{{pet.pet_photo}}" alt="Photo of a pet" />
+    <p>{{pet.pet_fact}}</p>
+    {% else %}
+    <h1>not working</h1>
+    {%endif%}
 </body>
 </html>

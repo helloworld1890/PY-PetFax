@@ -9,5 +9,11 @@ def create_app():
     
     from . import pet
     app.register_blueprint(pet.bp)
+
+    from . import show
+    app.register_blueprint(show.display)
+
+    from . import create
+    app.register_blueprint(create.form)
     
     return app
