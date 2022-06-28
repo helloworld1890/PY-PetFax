@@ -1,0 +1,28 @@
+body {
+    background-color: blueviolet;
+    color: burlywood;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5rem;
+}
+
+a {
+    text-decoration: none;
+    color: burlywood;
+}
+
+img {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 20px;
+}
+
+.design {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

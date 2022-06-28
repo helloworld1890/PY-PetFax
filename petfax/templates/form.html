@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="{{url_for('static', filename='style.css')}}" rel="stylesheet">
+</head>
+<body>
+    <h1>Edit your pet</h1>
+    <form action="/pets/" method="GET">
+        <label for="Name">NAME</label>
+        <input type="text" name="name" id="pet-name">
+        <label for="Name">FACTS</label>
+        <input type="text" name="information" id="pet-information">
+        <input type="button" value="Submit" placeholder="Submit">
+    </form>
+    <p><a href="/pets/">Return to Pets</a></p>
+    
+</body>
+</html>
