@@ -1,10 +1,10 @@
 from flask import (Blueprint, render_template)
 import json
 
-display = Blueprint('show', __name__, url_prefix='/pets/<int:id>')
+bp2 = Blueprint('show', __name__, url_prefix='/pets/<int:id>')
 pets = json.load(open('pets.json'))
 print(pets)
 
-@display.route('/')
+@bp2.route('/')
 def index(id):
-    return render_template('show.html', pet=pets[id -1])
+    return render_template('pets/show.html', pet=pets[id -1])

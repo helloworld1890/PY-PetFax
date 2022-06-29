@@ -1,28 +1,43 @@
 body {
-    background-color: blueviolet;
-    color: burlywood;
+  background-color: blueviolet;
+  color: burlywood;
+  max-height: 100vh;
 }
 
 h1 {
-    text-align: center;
-    font-size: 5rem;
+  text-align: center;
+  font-size: 3rem;
 }
 
 a {
-    text-decoration: none;
-    color: burlywood;
+  text-decoration: none;
+  color: burlywood;
+  transition: 1s;
+}
+
+a:hover {
+  font-size: 30px;
+  font-weight: 50px;
+  color: rgb(31, 229, 244);
 }
 
 img {
-    height: 20rem;
-    width: 20rem;
-    border-radius: 20px;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 20px;
+  margin-right: 20px;
 }
 
 .design {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#add-more {
+    text-align: center;
+    margin-top: 40px;
 }

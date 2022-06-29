@@ -8,13 +8,13 @@
     <link href="{{url_for('static', filename='style.css')}}" rel="stylesheet">
 </head>
 <body>
-    <h1>Welcome to PetFax</h1>
-    <div class="design">
-        {% for pet in pets %}
-            <h2><a href="/pets/{{pet.pet_id}}">{{pet.pet_name}}</a></h2>
-            <img src="{{ pet.pet_photo }}" alt="Photo of pet"/>
-        {% endfor %}
-        <a href="/pets/form">Add more pets!</a>
-    </div>
+    {% if pet %}
+    <h2>{{pet.pet_name}}</h2>
+    <img src="{{pet.pet_photo}}" alt="Photo of a pet" />
+    <p>{{pet.pet_fact}}</p>
+    <p><a href="/pets/"> << Go Back</a></p>
+    {% else %}
+    <h1>not working</h1>
+    {%endif%}
 </body>
 </html>

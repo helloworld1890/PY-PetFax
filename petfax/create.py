@@ -1,7 +1,8 @@
 from flask import (Blueprint, render_template)
 
-form  = Blueprint('create', __name__, url_prefix="/pets/form" )
+bp3  = Blueprint('create', __name__, url_prefix="/form" )
 
-@form.route('/')
+@bp3.route('/')
 def index():
-    return render_template('form.html')
+    return render_template('facts/form.html')
+
